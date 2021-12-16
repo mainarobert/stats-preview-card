@@ -93,6 +93,21 @@ img {
         max-width: 100%;
     }
 
+    .wrap {
+        position: relative;
+    }
+
+    .wrap::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(93, 4, 148, 0.65);
+        z-index: 999;
+    }
+
     .card {
         display: flex;
         flex-direction: row-reverse;
@@ -113,9 +128,14 @@ img {
         margin-top: 40px;
     }
 
-    ul {
+    .hero-stats ul {
         display: flex;
         justify-content: space-between;
+        padding: 0;
+    }
+
+    .hero-stats ul li {
+        padding: 0;
     }
 
 }
