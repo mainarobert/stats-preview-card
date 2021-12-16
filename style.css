@@ -70,3 +70,52 @@ img {
 .hero-stats li {
     padding: 0.5rem;
 }
+
+@media (min-width:1440px) {
+
+    .image-hero {
+        display: none;
+    }
+
+    .image-hero-1 {
+        display: block;
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
+    
+    .container{
+        margin: 0 auto;
+        margin-top: 200px;
+        max-width: 1440px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 70%;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .hero {
+        justify-content: space-between;
+        max-width: 40%;
+        text-align: start;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .hero-stats {
+        margin-top: 40px;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
